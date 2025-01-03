@@ -14,6 +14,7 @@ func averageOfLevels(root *TreeNode) []float64 {
 	if root == nil {
 		return nil
 	}
+	
 	var arr []float64
 	q := []*TreeNode{root}
 

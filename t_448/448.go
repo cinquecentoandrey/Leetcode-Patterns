@@ -9,6 +9,28 @@ func main() {
 	fmt.Println(findDisappearedNumbers(arr))
 }
 
+// func findDisappearedNumbers(nums []int) []int {
+// 	res := make([]int, 0)
+	
+// 	i := 0
+// 	for i < len(nums) {
+// 		pos := nums[i] - 1
+// 		if nums[i] != nums[pos] {
+// 			nums[i], nums[pos] = nums[pos], nums[i]
+// 		} else {
+// 			i++
+// 		}
+// 	}
+
+// 	for i, v := range nums {
+// 		if v != i+1 {
+// 			res = append(res, i+1)
+// 		}
+// 	}
+
+// 	return res
+// }
+
 func findDisappearedNumbers(nums []int) []int {
 	res := make([]int, 0)
 	idxArr := make([]bool, len(nums)+1)

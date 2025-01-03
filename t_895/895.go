@@ -2,8 +2,6 @@ package main
 
 // https://leetcode.com/problems/maximum-frequency-stack/
 
-import "fmt"
-
 // 2nd
 type FreqStack struct {
     FrequencyMap    map[int]int 
@@ -174,55 +172,6 @@ func (this *FreqStack) Pop() int {
 
 // 	this.data = append(this.data[:index], this.data[index+1:]...)
 // }
-
-func main() {
-	fmt.Println()
-	stack := Constructor()
-
-	arr := []int{4, 3, 2, 4, 3, 4, 5}
-	//arr := []int{4, 3, 3}
-	for _, v := range arr {
-		fmt.Println()
-		stack.Push(v)
-		fmt.Print("after adding ")
-		fmt.Println(v)
-		fmt.Println(stack.data)
-		fmt.Println(stack.freqMap)
-		fmt.Println(stack.bucket.bucketElements)
-		fmt.Println()
-	}
-
-	fmt.Println()
-	fmt.Println("final state before calling pop)")
-	fmt.Println(stack.data)
-	fmt.Println(stack.freqMap)
-	fmt.Println(stack.bucket.bucketElements)
-
-	fmt.Println()
-	fmt.Println("after 1st pop()")
-	stack.Pop()
-
-	fmt.Println(stack.data)
-	fmt.Println(stack.freqMap)
-	fmt.Println(stack.bucket.bucketElements)
-
-	fmt.Println()
-	fmt.Println("after 2nd pop()")
-	stack.Pop()
-
-	fmt.Println(stack.data)
-	fmt.Println(stack.freqMap)
-	fmt.Println(stack.bucket.bucketElements)
-
-	fmt.Println()
-	fmt.Println("after 3rd pop()")
-	stack.Pop()
-
-	fmt.Println(stack.data)
-	fmt.Println(stack.freqMap)
-	fmt.Println(stack.bucket.bucketElements)
-}
-
 
 
 // 	// 1. получаем список элементов из последнего бакета

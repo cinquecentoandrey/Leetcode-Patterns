@@ -21,6 +21,25 @@ func majoriyElement(nums []int) int {
 	return nums[0]
 }
 
+// шайтан вариант
+func majoriyElement1(nums []int) int {
+	var result int
+	vote := 0
+
+	for _, v := range nums {
+		if vote == 0 {
+			result = v
+		} else if (v == result) {
+			vote++
+		} else {
+			vote--
+		}
+	}
+
+	return result
+}
+
+
 func main() {
 	arr := []int{2,2,1,1,1,2,2}
 	fmt.Println(majoriyElement(arr))
