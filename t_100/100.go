@@ -2,6 +2,12 @@ package main
 
 // https://leetcode.com/problems/same-tree/
 
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
 // dfs
 func isSameTree(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil {
