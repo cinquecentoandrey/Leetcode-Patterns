@@ -2,10 +2,6 @@ package main
 
 // https://leetcode.com/problems/product-of-array-except-self/description/
 
-import (
-	"fmt"
-)
-
 func productExceptSelf(nums []int) []int {
 	n := len(nums)
 	res:= make([]int, n)
