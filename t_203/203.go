@@ -7,6 +7,7 @@ type ListNode struct {
     Next *ListNode
 }
 
+// просто меняем указатель ноды, и про доп ноду в начале не забываем
 func removeElements(head *ListNode, val int) *ListNode {
 	temp := &ListNode{}
 	temp.Val = -1

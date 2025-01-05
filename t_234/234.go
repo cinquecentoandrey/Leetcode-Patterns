@@ -7,6 +7,7 @@ type ListNode struct {
     Next *ListNode
 }
 
+// комбинация задач на разворот и и поиск середины
 func middleNode(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 	   return head

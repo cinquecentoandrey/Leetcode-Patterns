@@ -9,6 +9,8 @@ func main() {
 	fmt.Println(findDisappearedNumbers(arr))
 }
 
+
+// можно через мапу, индекс массив а можно через cyclic sort
 // func findDisappearedNumbers(nums []int) []int {
 // 	res := make([]int, 0)
 	

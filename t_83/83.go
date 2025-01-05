@@ -9,6 +9,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// ничего сложного, два указателя и сдвигаем их по условию
 func deleteDuplicatesListNode(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head

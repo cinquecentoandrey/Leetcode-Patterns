@@ -9,6 +9,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// просто сраниваем значения и двигаем ноды
 func mergeTwoSortLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	temp := &ListNode{}
 	cur := temp

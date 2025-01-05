@@ -4,6 +4,7 @@ package main
 
 import "fmt"
 
+// просто переставили все не 0 в левую часть
 func moveZeroes(nums []int) {
 	notZero := 0
 

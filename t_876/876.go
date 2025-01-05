@@ -11,6 +11,8 @@ type ListNode struct {
     Next *ListNode
 }
 
+
+// опять же 2 указателя и пошли
 func middleNode(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head

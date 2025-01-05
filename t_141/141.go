@@ -11,6 +11,7 @@ type ListNode struct {
     Next *ListNode
 }
 
+// бааз, 2 указателя и пошли 
 func hasCycle(head *ListNode) bool {
 	if head == nil || head.Next == nil {
 		return false

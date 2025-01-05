@@ -1,7 +1,7 @@
 package main
 
 // https://leetcode.com/problems/range-sum-query-immutable/
-// дада префиксная сумма, но я тупой
+// дада префиксная сумма, но я тупой (мне лень переписывать)
 
 type NumArray struct {
     arr []int

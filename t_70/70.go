@@ -8,6 +8,7 @@ func main() {
 	fmt.Println(climbStairs(6))
 }
 
+// фибо
 func climbStairs(n int) int {
 	if n < 3 {
 		return n

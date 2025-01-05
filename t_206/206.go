@@ -1,6 +1,7 @@
 package main
 
 // https://leetcode.com/problems/reverse-linked-list/
+// https://www.geeksforgeeks.org/reverse-a-linked-list/
 
 func main() {
 
@@ -11,7 +12,7 @@ type ListNode struct {
     Next *ListNode
 }
 
-
+// просто не запутаться в указателях
 func reverseList(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head

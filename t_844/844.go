@@ -2,6 +2,9 @@ package main
 
 // https://leetcode.com/problems/backspace-string-compare/
 
+
+// идея в том, что идем с конца строки и двигаем индекс в заивимости от символа и кол-ва решеток
+// пишут, что Easy, но как по мне это medium
 func getCurrentIndex(str string, idx int) int {
 	toSkip := 0
 

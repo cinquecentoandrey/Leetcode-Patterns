@@ -24,3 +24,16 @@ func missingNumber(nums []int) int {
 
 	return int(-1)
 }
+
+ 
+// за o(n)/o(1) через прогрессию
+// func missingNumber(nums []int) int {
+//     n := len(nums)
+//     sum := 0
+//     for _, v := range nums {
+//         sum += v
+//     }
+
+//     return n* (n+1)/2 - sum
+
+// }
